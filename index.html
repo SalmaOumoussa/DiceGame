@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="players">
+          <div id="P1" class="playerActive">
+            <h3 id="change1">
+              Player 1
+              <span><img src="images/switch.png" width="30px" alt="" /></span>
+            </h3>
+            <hr />
+            <h1 class="Score" id="score1">0</h1>
+            <br />
+            <div id="totalScr1" class="TotalScr">00</div>
+          </div>
+          <div id="P2" class="playerActive">
+            <h3 id="change2">
+              Player 2
+              <span><img src="images/switch.png" width="30px" alt="" /></span>
+            </h3>
+            <hr />
+            <h1 class="Score" id="score2">0</h1>
+            <br />
+            <div id="totalScr2" class="TotalScr">00</div>
+          </div>
+        </div>
+
+        <img src="images/1.jpg" id="dice" />
+        <div class="buttons" id="buttons">
+          <button onclick="launchGame()">Roll Dice</button>
+          <button onclick="initGame()">New GAME</button><br />
+          <button onclick="changePlayer()">Hold & Switch</button>
+          <button onclick="editNames()">Change Names</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
